@@ -13,6 +13,7 @@
 	--mainColorLight: #5767aa;
 	--secondaryColor: #000000;
 	--textColor: #eee;
+
 }
 
 header {
@@ -59,6 +60,10 @@ nav {
 		visibility: visible;
 		opacity: 1;
 	}
+	nav {
+		display: flex;
+		justify-content: flex-end; /* Align navbar to the end */
+		gap: 1rem;}
 
 	header nav {
 		position: fixed;
@@ -73,6 +78,7 @@ nav {
 		gap: 1.5rem;
 		background-color: var(--mainColor);
 		transition: 1s;
+		z-index: 1000;
 	}
 
 	header .responsive_nav {

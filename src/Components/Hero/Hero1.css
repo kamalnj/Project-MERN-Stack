@@ -1,0 +1,14 @@
+.hero1 {
+    position: relative; /* Enable positioning for child elements */
+    overflow: hidden; /* Prevent image overflow */
+    min-height: 100vh; /* Set minimum height for full viewport */
+    background-color: #fff;
+  }
+  .hero1__text{
+    color: #000000;
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px;
+    font-size: 1.5rem;
+
+  }

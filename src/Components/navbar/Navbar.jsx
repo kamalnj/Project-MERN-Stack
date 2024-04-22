@@ -1,8 +1,9 @@
 import { useRef } from "react";
+import { NavLink } from "react-router-dom"; // Import NavLink
+
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 import logo from '../assets/logo.png'
-import Button from '@mui/material/Button';
 
 function Navbar() {
 	const navRef = useRef();
@@ -15,14 +16,14 @@ function Navbar() {
 
 	return (
 		<header>
-			<img src={logo} alt="" height={80} />
+			 <a href="/"><img  src={logo} alt="" height={80} /></a>
 			<nav ref={navRef}>
-				<a href="/#">Acceuil</a>
-				<a href="/#">Nos produits</a>
-				<a href="/#">À propos de nous</a>
-				<a href="/#">Carrières</a>
-                <a href="/#">Contact</a>  
-                <a href="/#">Connectez-vous</a>  
+            <NavLink to="/" exact activeClassName="active">Accueil</NavLink>
+                <NavLink to="/products" activeClassName="active">Nos produits</NavLink>
+                <NavLink to="/about" activeClassName="active">À propos de nous</NavLink>
+                <NavLink to="/careers" activeClassName="active">Carrières</NavLink>
+                <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+                <NavLink to="/login" activeClassName="active">Connectez-vous</NavLink>  
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

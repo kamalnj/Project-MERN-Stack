@@ -1,0 +1,26 @@
+.hero {
+  position: relative; /* Enable positioning for child elements */
+  overflow: hidden; /* Prevent image overflow */
+  min-height: 100vh; /* Set minimum height for full viewport */
+}
+
+.hero__image {
+  width: 100%; /* Make image fill container width */
+  height: 100%; /* Make image fill container height */
+  object-fit: cover; /* Crop image to fit container while maintaining aspect ratio */
+  position: absolute; /* Position image absolutely within the hero */
+  top: 0; /* Set image top position to 0 */
+  left: 0; /* Set image left position to 0 */
+  opacity:  0.5;
+}
+
+.hero__text {
+  color: #fff; /* White text for better visibility on image */
+  font-size: 4rem; /* Adjust font size as needed */
+  position: absolute; /* Position text absolutely within the hero */
+  top: 50%; /* Center text vertically (50% of container height) */
+  left: 50%; /* Center text horizontally (50% of container width) */
+  transform: translate(-50%, -50%); /* Offset text to compensate for absolute positioning */
+  text-align: center; /* Center text alignment */
+  font-weight: bolder;
+}
