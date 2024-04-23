@@ -4,11 +4,10 @@
     min-height: 100vh; /* Set minimum height for full viewport */
     background-color: #fff;
   }
-  .hero1__text{
+  .hero1__text {
     color: #000000;
     text-align: center;
-    margin-top: 60px;
-    padding: 40px;
-    font-size: 1.5rem;
-
-  }
+    margin-top: 90px;
+    margin-bottom: px; /* Adjust the bottom margin here */
+    font-size: 1.8rem;
+}

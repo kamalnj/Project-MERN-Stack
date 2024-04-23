@@ -1,0 +1,110 @@
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin-top: 0; /* Remove top margin or set it to a smaller value */
+    padding-top: 0%;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust width */
+    max-width: 600px; /* Maximum width */
+    height: 300px; /* Adjust height */
+    max-height: 400px; /* Maximum height */
+    overflow: hidden; 
+}
+
+.slide {
+    border-radius: 0.5rem;
+    height: 100%;
+    transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+.slide-hidden {
+    display: none;
+    opacity: 0; /* Hide slides */
+}
+
+.arrow {
+    position: absolute;
+    filter: drop-shadow(0px 0px 5px #555);
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 0.5rem; /* Adjust position */
+}
+
+.arrow-right {
+    right: 0.5rem; /* Adjust position */
+}
+
+.indicators {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicator {
+    background-color: white;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px #555;
+    margin: 0 0.2rem;
+    cursor: pointer;
+}
+
+.indicator-inactive {
+    background-color: grey;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .carousel {
+        width: 90%; /* Adjust width */
+        height: 250px; /* Adjust height */
+    }
+
+    .arrow {
+        width: 1.5rem;
+        height: 1.5rem; /* Adjust size */
+    }
+
+    .indicators {
+        bottom: 0.5rem; /* Adjust position */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel {
+        width: 100%; /* Full width */
+        height: 200px; /* Adjust height */
+    }
+
+    .arrow {
+        width: 1.25rem;
+        height: 1.25rem; /* Adjust size */
+    }
+
+    .indicators {
+        bottom: 0.2rem; /* Adjust position */
+    }
+}
