@@ -3,6 +3,7 @@
     overflow: hidden; /* Prevent image overflow */
     min-height: 100vh; /* Set minimum height for full viewport */
     background-color: #fff;
+      margin-bottom: -20px; /* Adjust the value as needed */
   }
   .hero1__text {
     color: #000000;

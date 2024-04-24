@@ -1,0 +1,82 @@
+/* Base styles */
+.colo {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    padding-bottom: 0;
+    margin: 0;
+    padding-top: 0px;
+}
+
+
+/* Responsive styles for large screens */
+@media (min-width: 1024px) {
+    .colo {
+        overflow: visible;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .column-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+        margin: auto;
+        max-width: 100%;
+    }
+}
+
+
+
+/* Main content styling */
+.main-content {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 7xl;
+}
+
+/* Text and heading styling */
+.text-heading {
+    padding-right: 1rem;
+    max-width: lg;
+}
+.p1{
+        margin-top: 20px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #000000;
+        text-align: center;
+    
+}
+.large{
+    margin-top: 30px;
+        font-size: 1.4rem;
+        font-weight:normal;
+        color: #000000;
+        text-align: center;
+    
+}
+.text-heading h1 {
+    
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #d01702;
+    text-align: center;
+}
+
+
+/* Image container styling */
+.image-container {
+    margin-left: -3rem;
+    margin-top: -3rem;
+    position: sticky;
+    overflow: hidden;
+    max-width: 100%; /* Set max-width for the container */
+}
+.image-container img {
+    width: 100%; /* Set the width to 100% to make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 250px; /* Full viewport height */
     margin-top: 0; /* Remove top margin or set it to a smaller value */
     padding-top: 0%;
 }
@@ -17,6 +17,8 @@
     height: 300px; /* Adjust height */
     max-height: 400px; /* Maximum height */
     overflow: hidden; 
+    margin-top: 50Px;
+
 }
 
 .slide {
