@@ -23,15 +23,7 @@ const Carousel = ({ data }) => {
                     <img src={item.src} alt={item.alt} key={idx} className={slide === idx ? 'slide' : 'slide slide-hidden'} />
                 ))}
                 <BsArrowRightCircleFill className='arrow arrow-right' onClick={nextSlide} />
-                <span className='indicators'>
-                    {data.map((_, idx) => (
-                        <button
-                            key={idx}
-                            onClick={() => setSlide(idx)}
-                            className={slide === idx ? 'indicator' : 'indicator indicator-inactive'}
-                        />
-                    ))}
-                </span>
+
             </div>
         </div>
     );

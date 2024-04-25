@@ -41,6 +41,7 @@
 .text-heading {
     padding-right: 1rem;
     max-width: lg;
+    margin-top: 40px;
 }
 .p1{
         margin-top: 20px;
@@ -70,13 +71,14 @@
 
 /* Image container styling */
 .image-container {
-    margin-left: -3rem;
-    margin-top: -3rem;
-    position: sticky;
+    margin-left: 0;
+    margin-top: 0;
+    position: relative; /* Changed from sticky to relative */
     overflow: hidden;
-    max-width: 100%; /* Set max-width for the container */
+    z-index: 10; /* Adjust the z-index to bring the image forward */
 }
 .image-container img {
     width: 100%; /* Set the width to 100% to make the image responsive */
     height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is a block-level element */
 }

@@ -16,7 +16,7 @@ function Navbar() {
 
 	return (
 		<header>
-			 <a href="/"><img  src={logo} alt="" height={80} /></a>
+			 <NavLink to="/" activeClassName="active"><img  src={logo} alt="" width={80} /></NavLink>
 			<nav ref={navRef}>
             <NavLink to="/" exact activeClassName="active">Accueil</NavLink>
                 <NavLink to="/products" activeClassName="active">Nos produits</NavLink>

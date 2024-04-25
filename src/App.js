@@ -10,6 +10,8 @@ import About from './Pages/About';
 import Careers from './Pages/Careers';
 import Contact from './Pages/Contact';
 import Hero2 from './Components/Hero/Hero2';
+import Hero3 from './Components/Hero/Hero3';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -28,8 +30,18 @@ function App() {
     <Hero/>
     <Hero1 />
     <Hero2 />
-
-
+    <Hero3 />
+    <BrowserRouter>
+    <Footer />
+      <Routes>
+        <Route path='/products' element={<Shop/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/careers' element={<Careers/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path=':productID' element={<Product/>}/>
+        <Route path='/login' element={<LoginSignup/>}/>
+      </Routes>
+</BrowserRouter>
     </div>
   );
 }
