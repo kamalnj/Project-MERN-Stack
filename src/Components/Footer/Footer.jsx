@@ -5,15 +5,23 @@ const Footer = () => {
     return (
         <footer className="bg-black text-white">
             <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
-                <div className="border-t border-gray-800 mt-8 pt-8 flex justify-between items-center">
-                    <p className="text-sm text-white">© 2024 ECCBC.All rights reserved.</p>
-                    <div className="flex space-x-4">
-                        <NavLink className=" hover:text-red-600 text-sm text-white" to="/products" activeClassName="active">Nos produits</NavLink>
-                        <NavLink className="hover:text-red-600 text-sm text-white" to="/about" activeClassName="active">À propos de nous</NavLink>
-                        <NavLink className=" hover:text-red-600 text-sm text-white" to="/careers" activeClassName="active">Carrières</NavLink>
-                        <NavLink className="hover:text-red-600 text-sm text-white" to="/contact" activeClassName="active">Contact</NavLink>
+                <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <p className="text-sm text-white">© 2024 ECCBC. All rights reserved.</p>
+                    <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-4 md:mt-0">
+                        <NavLink className="hover:text-red-600 text-sm text-white" to="/products" activeClassName="active">
+                            Nos produits
+                        </NavLink>
+                        <NavLink className="hover:text-red-600 text-sm text-white" to="/about" activeClassName="active">
+                            À propos de nous
+                        </NavLink>
+                        <NavLink className="hover:text-red-600 text-sm text-white" to="/careers" activeClassName="active">
+                            Carrières
+                        </NavLink>
+                        <NavLink className="hover:text-red-600 text-sm text-white" to="/contact" activeClassName="active">
+                            Contact
+                        </NavLink>
                     </div>
-                    <div className="flex space-x-4">
+                    <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-4 md:mt-0">
                         <a href="/" className="hover:text-red-600 transition-colors">
                             <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
                                 <path d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1c-0.6,0-1.1-0.2-1.6-0.5c0,0.1,0,0.2,0,0.3,0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.1-1.3,0.1c-0.3,0-0.6-0.1-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6C22.5,6.4,23.3,5.5,24,4.6z" />

@@ -1,0 +1,27 @@
+{
+    "slides": [
+        {
+            "src": "https://www.eccbc.com/wp-content/uploads/2022/11/ECCBC_Products_CocaCola.png",
+            "alt": "slide 1"
+        },
+        {
+            "src": "https://www.eccbc.com/wp-content/uploads/2023/04/ECCBC_Products_Sprite.png",
+            "alt": "slide 2"
+        },
+        {
+            "src": "https://www.eccbc.com/wp-content/uploads/2022/11/ECCBC_Products_Hawaii.png",
+            "alt": "slide 3"
+        },
+        {
+            "src": "https://www.eccbc.com/wp-content/uploads/2022/11/ECCBC_Products_Ciel.png",
+            "alt": "slide 4"
+        },   {
+            "src": "https://www.eccbc.com/wp-content/uploads/2022/11/ECCBC_Products_Fanta.png",
+            "alt": "slide 5"
+        },
+        {
+            "src": "https://www.eccbc.com/wp-content/uploads/2022/11/ECCBC_Products_Poms.png",
+            "alt": "slide 6"
+        }
+    ]
+}
