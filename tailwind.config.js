@@ -8,6 +8,7 @@ module.exports = {
         sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        'kamal':'#eb4034',
         red: {
           '50': '#ffebee',
           '100': '#ffcdd2',
