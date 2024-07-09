@@ -29,9 +29,7 @@ const Hero3 = () => {
 </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
      
-                            <a href="#" className="text-sm font-semibold leading-6 text-white">
-                                Savoir plus <span aria-hidden="true">→</span>
-                            </a>
+
                         </div>
                     </div>
                     <div className="relative mt-16 h-80 lg:mt-8 w-full"> {/* Updated image container */}

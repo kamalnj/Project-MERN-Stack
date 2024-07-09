@@ -7,7 +7,7 @@ const Section2 = () => {
                 <img
                     className="object-cover w-full h-56 sm:h-80 md:h-96 lg:h-[40rem]"
                     src="https://www.eccbc.com/wp-content/uploads/2022/04/home_2.jpg"
-                    alt="Background image"
+                    alt="Background"
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-gray-900 bg-opacity-50 p-4 sm:p-6">
                     <h2 className="relative mb-4 text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight sm:leading-none">
